@@ -1,5 +1,6 @@
 # Nelister Base Project 🚀
-For the English version, click [here](./README.md)
+For the English version, click [here](./README.md).
+
 Proyecto base profesional para Angular 21 diseñado para acelerar el desarrollo de aplicaciones web modernas. Incluye arquitectura escalable, componentes reutilizables y un layout preconfigurado.
 
 ## 🚀 Demo
