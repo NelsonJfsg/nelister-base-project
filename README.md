@@ -1,61 +1,61 @@
 # Nelister Base Project 🚀
 
-Proyecto base profesional para Angular 21 diseñado para acelerar el desarrollo de aplicaciones web modernas. Incluye arquitectura escalable, componentes reutilizables y un layout preconfigurado.
+A professional base project for **Angular 21** designed to accelerate the development of modern web applications. It includes scalable architecture, reusable components, and a pre-configured layout.
 
 ## 🚀 Demo
 [Demo - Nelister Base Project](https://base.nelister.com/auth/login)
 
-## 📋 Descripción
+## 📋 Description
 
-**Nelister Base Project** es un starter template completo para proyectos Angular que deseas compartir o utilizar como punto de partida. Proporciona:
+**Nelister Base Project** is a comprehensive starter template for Angular projects that you wish to share or use as a starting point. It provides:
 
-- ✅ Estructura de carpetas escalable y bien organizada
-- ✅ Layout principal con Navbar, Sidebar y Footer
-- ✅ Responsive Design para mobile y tablets.
-- ✅ Sistema de autenticación con Guards
-- ✅ 5 módulos de ejemplo (Auth, Home, Dashboard, Security, Wallet, Settings)
-- ✅ Componentes reutilizables del UI
-- ✅ Lazy loading de rutas para mejor rendimiento
-- ✅ Angular Material integrado
-- ✅ Sistema de temas (Dark y Light)
-- ✅ SCSS para estilos profesionales
-- ✅ TypeScript con tipos estrictos
-- ✅ Tests configurados con Vitest
+- ✅ Scalable and well-organized folder structure.
+- ✅ Main layout with Navbar, Sidebar, and Footer.
+- ✅ Responsive Design for mobile and tablets.
+- ✅ Authentication system with Guards.
+- ✅ 5 example modules (Auth, Home, Dashboard, Security, Wallet, Settings).
+- ✅ Reusable UI components.
+- ✅ Route Lazy Loading for better performance.
+- ✅ Integrated Angular Material.
+- ✅ Theme system (Dark and Light).
+- ✅ SCSS for professional styling.
+- ✅ TypeScript with strict typing.
+- ✅ Tests configured with Vitest.
 
-No necesitas empezar desde cero. Solo clona este proyecto, ajusta los módulos a tus necesidades y ¡comienza a desarrollar!
+No need to start from scratch. Just clone this project, adjust the modules to your needs, and start developing!
 
-## 🛠️ Tecnologías
+## 🛠️ Technologies
 
 - **Angular**: 21.1.0
 - **TypeScript**: 5.9.2
 - **Angular Material**: 21.1.5
 - **Angular CDK**: 21.1.5
 - **RxJS**: 7.8.0
-- **SCSS**: Para estilos avanzados
-- **Vitest**: Testing framework
+- **SCSS**: For advanced styling.
+- **Vitest**: Testing framework.
 - **Node.js**: npm 10.9.2
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
 ```
 src/
 ├── app/
-│   ├── core/                 # Lógica central de la aplicación
-│   │   ├── guards/          # Route guards (Auth, NoAuth)
-│   │   └── interceptors/    # HTTP interceptors (próximamente)
+│   ├── core/                 # Central application logic
+│   │   ├── guards/           # Route guards (Auth, NoAuth)
+│   │   └── interceptors/     # HTTP interceptors (coming soon)
 │   │
-│   ├── features/            # Módulos de funcionalidades
-│   │   ├── auth/           # Módulo de autenticación (login)
-│   │   ├── home/           # Página de inicio
-│   │   ├── dashboard/      # Panel de control
-│   │   ├── security/       # Seguridad
-│   │   ├── wallet/         # Billetera/Pagos
-│   │   └── settings/       # Configuración de usuario
+│   ├── features/             # Feature modules
+│   │   ├── auth/             # Authentication module (login)
+│   │   ├── home/             # Home page
+│   │   ├── dashboard/        # Control panel
+│   │   ├── security/         # Security
+│   │   ├── wallet/           # Wallet/Payments
+│   │   └── settings/         # User settings
 │   │
-│   ├── shared/             # Componentes y servicios compartidos
-│   │   ├── components/     # Componentes reutilizables
+│   ├── shared/               # Shared components and services
+│   │   ├── components/       # Reusable components
 │   │   └── ui/
-│   │       └── layout/     # Layout principal
+│   │       └── layout/       # Main layout
 │   │           ├── components/
 │   │           │   ├── navbar/
 │   │           │   ├── sidebar/
@@ -65,96 +65,95 @@ src/
 │   │           │   └── main-layout/
 │   │           └── services/
 │   │
-│   ├── app.routes.ts       # Configuración principal de rutas
-│   ├── app.config.ts       # Configuración de la aplicación
-│   ├── app.ts              # Componente raíz
-│   └── app.scss            # Estilos globales
+│   ├── app.routes.ts         # Main route configuration
+│   ├── app.config.ts         # Application configuration
+│   ├── app.ts                # Root component
+│   └── app.scss              # Global styles
 │
-├── styles.scss             # Estilos compartidos
-├── main.ts                 # Punto de entrada
-└── index.html              # HTML principal
-
+├── styles.scss               # Shared styles
+├── main.ts                   # Entry point
+└── index.html                # Main HTML
 ```
 
-## 🚀 Instalación y Setup
+## 🚀 Installation and Setup
 
-### Requisitos previos
-- Node.js 18+ (se incluye npm 10.9.2)
-- Conocimiento de Angular 21 y TypeScript
+### Prerequisites
+- Node.js 18+ (includes npm 10.9.2)
+- Knowledge of Angular 21 and TypeScript
 
-### Pasos de instalación
+### Installation Steps
 
-1. **Clona el repositorio**
+1. **Clone the repository**
    ```bash
-   git clone https://github.com/NelsonJfsg/nelister-base-project.git
+   git clone [https://github.com/NelsonJfsg/nelister-base-project.git](https://github.com/NelsonJfsg/nelister-base-project.git)
    cd nelister-base-project
    ```
 
-2. **Instala dependencias**
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-3. **Inicia el servidor de desarrollo**
+3. **Start the development server**
    ```bash
    npm start
    ```
-   La aplicación estará disponible en `http://localhost:4200`
+   The application will be available at `http://localhost:4200`
 
-4. **Build para producción**
+4. **Build for production**
    ```bash
    npm run build
    ```
 
-## 📚 Estructura de Rutas
+## 📚 Route Structure
 
-El proyecto utiliza lazy loading para optimizar el rendimiento. Todas las rutas están centralizadas en `app.routes.ts`:
+The project uses lazy loading to optimize performance. All routes are centralized in `app.routes.ts`:
 
 ```
-/auth              → Módulo de autenticación (Login, Registro)
-/home              → Página de inicio
-/dashboard         → Panel de control
-/security          → Configuración de seguridad
-/wallet            → Gestión de pagos/billetera
-/settings          → Configuración de usuario
+/auth              → Authentication Module (Login, Register)
+/home              → Home Page
+/dashboard         → Control Panel
+/security          → Security Settings
+/wallet            → Payment/Wallet Management
+/settings          → User Settings
 ```
 
-### Guards de Autenticación
+### Authentication Guards
 
-- **AuthGuard**: Protege rutas que requieren estar autenticado
-- **NoAuthGuard**: Previene acceso a rutas de auth si ya estás autenticado
+- **AuthGuard**: Protects routes that require authentication.
+- **NoAuthGuard**: Prevents access to auth routes if you are already authenticated.
 
-Ejemplo de uso:
+Usage example:
 ```typescript
-canActivate: [AuthGuard]  // Solo usuarios autenticados
-canActivate: [NoAuthGuard] // Solo usuarios NO autenticados
+canActivate: [AuthGuard]  // Authenticated users only
+canActivate: [NoAuthGuard] // NON-authenticated users only
 ```
 
-### 🧩 Estructura de Features (Skeletons)
+### 🧩 Feature Structure (Skeletons)
 
-El proyecto incluye varios módulos con su estructura de rutas y lazy loading ya configurada. 
-Nota: A excepción del módulo de Auth, estos módulos sirven como punto de partida visual y estructural:
+The project includes several modules with their route structure and lazy loading already configured.
+Note: Except for the Auth module, these modules serve as a visual and structural starting point:
 
-    Auth: Sistema funcional de Login (simulado) y Guards.
-    Dashboard, Wallet, Settings, etc.: Estructuras limpias listas para recibir tu lógica de negocio.
+- **Auth**: Functional Login system (simulated) and Guards.
+- **Dashboard, Wallet, Settings, etc.**: Clean structures ready to receive your business logic.
 
-## 🎨 Componentes Compartidos del Layout
+## 🎨 Shared Layout Components
 
 ### Navbar
-Barra de navegación superior con logo y opciones de usuario.
+Top navigation bar with logo and user options.
 
 ### Sidebar
-Menú lateral con navegación entre módulos principales.
+Side menu with navigation between main modules.
 
 ### Footer
-Pie de página con información de derechos y enlaces.
+Page footer with copyright information and links.
 
 ### Main Layout
-Envolvente principal que integra Navbar, Sidebar y Footer.
+Main wrapper that integrates Navbar, Sidebar, and Footer.
 
-## 📦 Dependencias Principales
+## 📦 Main Dependencies
 
-### Producción
+### Production
 ```json
 {
   "@angular/core": "^21.1.0",
@@ -168,7 +167,7 @@ Envolvente principal que integra Navbar, Sidebar y Footer.
 }
 ```
 
-### Desarrollo
+### Development
 ```json
 {
   "@angular/cli": "^21.1.4",
@@ -180,84 +179,84 @@ Envolvente principal que integra Navbar, Sidebar y Footer.
 }
 ```
 
-## 🔧 Cómo Extender el Proyecto
+## 🔧 How to Extend the Project
 
-### Crear un nuevo módulo de features
+### Create a new feature module
 
-1. Crea una carpeta en `src/app/features/` con el nombre de tu módulo:
+1. Create a folder in `src/app/features/` with your module name:
    ```
-   src/app/features/mi-modulo/
-   ├── mi-modulo.routes.ts
+   src/app/features/my-module/
+   ├── my-module.routes.ts
    ├── pages/
-   │   └── mi-pagina/
-   │       ├── mi-pagina.ts
-   │       ├── mi-pagina.html
-   │       └── mi-pagina.scss
+   │   └── my-page/
+   │       ├── my-page.ts
+   │       ├── my-page.html
+   │       └── my-page.scss
    └── services/
    ```
 
-2. Define las rutas en `mi-modulo.routes.ts`:
+2. Define the routes in `my-module.routes.ts`:
    ```typescript
    import { Routes } from '@angular/router';
-   import { MiPaginaComponent } from './pages/mi-pagina/mi-pagina';
+   import { MyPageComponent } from './pages/my-page/my-page';
 
-   export const MiModuloRoutes: Routes = [
+   export const MyModuleRoutes: Routes = [
      {
        path: '',
-       component: MiPaginaComponent
+       component: MyPageComponent
      }
    ];
    ```
 
-3. Agrega el módulo en `app.routes.ts`:
+3. Add the module to `app.routes.ts`:
    ```typescript
    {
-     path: 'mi-modulo',
-     loadChildren: () => import('./features/mi-modulo/mi-modulo.routes')
-       .then(r => r.MiModuloRoutes)
+     path: 'my-module',
+     loadChildren: () => import('./features/my-module/my-module.routes')
+       .then(r => r.MyModuleRoutes)
    }
    ```
 
-### Crear un componente compartido
+### Create a shared component
 
-1. Crea el componente en `src/app/shared/components/`:
+1. Create the component in `src/app/shared/components/`:
    ```bash
-   src/app/shared/components/mi-componente/
-   ├── mi-componente.ts
-   ├── mi-componente.html
-   └── mi-componente.scss
+   src/app/shared/components/my-component/
+   ├── my-component.ts
+   ├── my-component.html
+   └── my-component.scss
    ```
 
-2. Usa el componente en otros lugares:
+2. Use the component elsewhere:
    ```typescript
-   import { MiComponente } from '@app/shared/components/mi-componente/mi-componente';
+   import { MyComponent } from '@app/shared/components/my-component/my-component';
 
    @Component({
      selector: 'app-home',
-     imports: [MiComponente],
-     template: '<app-mi-componente></app-mi-componente>'
+     imports: [MyComponent],
+     template: '<app-my-component></app-my-component>'
    })
    ```
 
-## 🔐 Autenticación
+## 🔐 Authentication
 
-El proyecto usa un sistema simple basado en **localStorage** para almacenar tokens.
+The project uses a simple system based on **localStorage** to store tokens.
 
-### Implementar login
+### Implement login
 
-En `src/app/features/auth/pages/login-page/`:
+In `src/app/features/auth/pages/login-page/`:
 
 ```typescript
 export class LoginPage {
   onLogin(credentials: { email: string; password: string }) {
-    // Aquí va la llamada a tu API
-    localStorage.setItem('token', 'tu-token-aqui');
+    // API call goes here
+    localStorage.setItem('token', 'your-token-here');
     this.router.navigate(['/dashboard']);
   }
 }
 ```
 
-### Proteger una ruta
+### Protect a route
 
 ```typescript
 {
@@ -267,65 +266,65 @@ export class LoginPage {
 }
 ```
 
-## 📝 Scripts Disponibles
+## 📝 Available Scripts
 
-### Desarrollo
+### Development
 ```bash
-npm start          # Inicia servidor en modo desarrollo (Puerto 4200)
-npm run watch      # Build con watch mode
+npm start          # Starts server in development mode (Port 4200)
+npm run watch      # Build with watch mode
 ```
 
 ### Testing
 ```bash
-npm test           # Ejecuta tests con Vitest
+npm test           # Runs tests with Vitest
 ```
 
-### Producción
+### Production
 ```bash
-npm run build      # Build optimizado para producción
+npm run build      # Optimized build for production
 ```
 
-## 🎯 Best Practices Implementadas
+## 🎯 Implemented Best Practices
 
-✅ **Standalone Components**: Todas los componentes son standalone  
-✅ **Signals**: Gestión moderna de estado con signals  
-✅ **Lazy Loading**: Rutas lazy-loaded para mejor rendimiento  
-✅ **TypeScript Strict**: Tipos estrictos habilitados  
-✅ **SCSS**: Organización clara de estilos  
-✅ **OnPush Change Detection**: Componentes optimizados (recomendado)  
-✅ **Componentes Pequeños**: Single responsibility principle  
-✅ **Servicios Inyectables**: Inyección de dependencias moderna  
+✅ **Standalone Components**: All components are standalone.
+✅ **Signals**: Modern state management with signals.
+✅ **Lazy Loading**: Lazy-loaded routes for better performance.
+✅ **TypeScript Strict**: Strict typing enabled.
+✅ **SCSS**: Clear organization of styles.
+✅ **OnPush Change Detection**: Optimized components (recommended).
+✅ **Small Components**: Single responsibility principle.
+✅ **Injectable Services**: Modern dependency injection.
 
-## 🤝 Contribuir
+## 🤝 Contributing
 
-Contribuciones son bienvenidas. Por favor:
+Contributions are welcome. Please:
 
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
+1. Fork the project.
+2. Create a branch for your feature (`git checkout -b feature/AmazingFeature`).
+3. Commit changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
 
-## 📄 Licencia
+## 📄 License
 
-Este proyecto está bajo la licencia MIT. Siéntete libre de usarlo, modificarlo y compartirlo.
+This project is under the MIT license. Feel free to use, modify, and share it.
 
-## 💬 Soporte
+## 💬 Support
 
-Si encuentras problemas o tienes preguntas:
-- Abre un issue en GitHub
-- Consulta la documentación de [Angular](https://angular.dev)
-- Revisa ejemplos en las carpetas de features
+If you encounter issues or have questions:
+- Open an issue on GitHub.
+- Consult the [Angular documentation](https://angular.dev).
+- Review examples in the feature folders.
 
-## 🎓 Recursos Útiles
+## 🎓 Useful Resources
 
-- [Documentación Angular 21](https://angular.dev)
+- [Angular 21 Documentation](https://angular.dev)
 - [Angular Material](https://material.angular.io)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/)
 - [RxJS Documentation](https://rxjs.dev)
 
 ---
 
-**Creado con ❤️ para la comunidad Angular**
+**Created with ❤️ for the Angular community**
 
-> ⭐ Si este proyecto te es útil, considera darle una estrella en GitHub
+> ⭐ If this project is useful to you, consider giving it a star on GitHub.
