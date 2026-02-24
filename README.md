@@ -2,6 +2,9 @@
 
 Proyecto base profesional para Angular 21 diseñado para acelerar el desarrollo de aplicaciones web modernas. Incluye arquitectura escalable, componentes reutilizables y un layout preconfigurado.
 
+## 🚀 Demo
+[Demo - Nelister Base Project](https://base.nelister.com/auth/login)
+
 ## 📋 Descripción
 
 **Nelister Base Project** es un starter template completo para proyectos Angular que deseas compartir o utilizar como punto de partida. Proporciona:
