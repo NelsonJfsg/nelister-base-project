@@ -28,14 +28,13 @@ export class LoginPage {
   }
 
   public onHandleTheme() {
-
-    this.navbarService.setTheme(!this.navbarService.getTheme);
-    
-    if (this.navbarService.getTheme) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light');
-    }
+    this.navbarService.setThemeToLocalStorage(() => {
+      if (this.navbarService.getTheme) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }else{
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    });
   }
 
 }
