@@ -8,6 +8,7 @@ Proyecto base profesional para Angular 21 diseñado para acelerar el desarrollo 
 
 - ✅ Estructura de carpetas escalable y bien organizada
 - ✅ Layout principal con Navbar, Sidebar y Footer
+- ✅ Responsive Design para mobile y tablets.
 - ✅ Sistema de autenticación con Guards
 - ✅ 5 módulos de ejemplo (Auth, Home, Dashboard, Security, Wallet, Settings)
 - ✅ Componentes reutilizables del UI
