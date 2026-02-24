@@ -39,3 +39,11 @@ p{
   align-items: center;
   padding: 0px 20px;
 }
+
+@media (max-width: 768px) {
+  .login-card-container {
+    width: 70%;
+    height: auto;
+    padding: 20px;
+  }
+}

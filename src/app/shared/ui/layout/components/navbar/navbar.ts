@@ -23,13 +23,13 @@ export class Navbar {
   }
 
   public onHandleTheme() {
+    this.navbarService.setThemeToLocalStorage(() => {
+      if (this.navbarService.getTheme) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    });
 
-    this.navbarService.setTheme(!this.navbarService.getTheme);
-    
-    if (this.navbarService.getTheme) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light');
-    }
   }
 }

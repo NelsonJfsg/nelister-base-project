@@ -1,24 +1,33 @@
 <section class="navbar-main-container">
+
     <div class="left-container">
       <button (click)="onHandleCollapse()" class="menu-icon" matIconButton>
         <mat-icon>menu</mat-icon>
       </button>
       <p class="title">{{navbarService.getTitle}}</p>
     </div>
+
     <div class="right-container">
+
       <button matIconButton>
         <mat-icon>search</mat-icon>
       </button>
+
       <button (click)="onHandleTheme()" matIconButton>
         <mat-icon>{{navbarService.getTheme ? 'light_mode' : 'dark_mode'}}</mat-icon>
       </button>
+
       <button matIconButton>
         <mat-icon>notifications</mat-icon>
       </button>
+
       <p>|</p>
+
       <button matIconButton>
         <mat-icon>person</mat-icon>
       </button>
+
       <p>UserName</p>
+      
     </div>
 </section>

@@ -20,7 +20,7 @@
   justify-content: end;
   width: 50%;
   align-items: center;
-  gap : 10px
+  gap : 10px;
 }
 
 .title{
@@ -35,5 +35,13 @@ button{
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
+  }
+
+  .title{
+    font-size: 20px;
+  }
+
+  .right-container{
+    gap : 0;
   }
 }
