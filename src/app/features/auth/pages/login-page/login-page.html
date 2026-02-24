@@ -1,0 +1,29 @@
+<section class="login-container">
+  <section class="login-card-container">
+
+    <header class="login-card-header">
+      <p>Login</p>
+      <button (click)="onHandleTheme()" matIconButton>
+        <mat-icon>{{navbarService.getTheme ? 'light_mode' : 'dark_mode'}}</mat-icon>
+      </button>
+    </header>
+
+    <div class="login-card-body">
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" />
+        <mat-icon matSuffix>email</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput type="email" />
+        <mat-icon matSuffix>password</mat-icon>
+      </mat-form-field>
+    </div>
+
+    <footer>
+      <button (click)="login()" matButton="filled">Login</button>
+    </footer>
+  </section>
+</section>

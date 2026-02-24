@@ -1,0 +1,58 @@
+/* ========================= */
+/* SIDEBAR BASE */
+/* ========================= */
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-radius: 5px;
+  padding: 5px 20px;
+  width: 100%;
+  color: var(--text-color);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar-item:hover {
+  background-color: var(--bg-color);
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+/* ========================= */
+/* VARIANTS */
+/* ========================= */
+
+/* Sidebar collapsed */
+.sidebar-item--collapsed {
+  justify-content: center;
+  padding: 5px;
+}
+
+/* Sidebar expanded */
+.sidebar-item--expanded {
+  justify-content: flex-start;
+}
+
+/* ========================= */
+/* INNER ELEMENTS */
+/* ========================= */
+
+.sidebar-item__icon {
+  padding: 0;
+  margin: 0;
+}
+
+/* TITLE */
+.sidebar-item__title {
+  white-space: nowrap;
+}
+
+/* COLLAPSED SIDEBAR HIDE TITLES */
+.sidebar--collapsed .sidebar-item__title {
+  display: none;
+}
+
+.sidebar-item--collapsed .sidebar-item__title {
+  display: none;
+}

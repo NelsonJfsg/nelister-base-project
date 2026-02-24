@@ -1,0 +1,39 @@
+.navbar-main-container {
+  display: flex;
+  width: 100%;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.left-container {
+  display: flex;
+  justify-content: start;
+  width: 50%;
+  align-items: center;
+  gap : 10px
+}
+
+.right-container {
+  display: flex;
+  justify-content: end;
+  width: 50%;
+  align-items: center;
+  gap : 10px
+}
+
+.title{
+  font-weight: 800;
+  font-size: 30px;
+}
+
+button{
+  color : var(--text-color);
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+}

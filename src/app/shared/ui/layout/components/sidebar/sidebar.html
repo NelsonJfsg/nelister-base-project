@@ -1,0 +1,31 @@
+<section class="sidebar-main-container">
+
+  <header [ngClass]="{
+    'sidebar-collapsed-header-container' : collapsedSignal(),
+    'sidebar-header-container' : !collapsedSignal()
+  }">
+    <button (click)="onHandleCollapse()" class="menu-icon" matIconButton>
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    @if (!collapsedSignal()) {
+      <p>Nelister</p>
+    }
+  </header>
+
+  <section class="content-container">
+
+    <section class="items-container">
+      @for (item of navItems; track item.id ) {
+        <ui-sidebar-item class="sidebar-item" [isCollapsed]="collapsedSignal" [navItem]="item" />
+      }
+    </section>
+  
+    <footer class="items-container line-divider">
+      @for (item of navFootersItems; track item.id ) {
+        <ui-sidebar-item class="sidebar-item" [isCollapsed]="collapsedSignal" [navItem]="item" />
+      }
+    </footer>
+
+  </section>
+</section>

@@ -1,0 +1,29 @@
+<section class="main-container">
+
+  <aside
+    class="sidebar"
+    [class.collapsed]="isSidebarCollapsed()"
+    [class.open]="!isSidebarCollapsed()"
+  >
+    <ui-sidebar 
+      [collapsedSignal]="isSidebarCollapsed" 
+    />
+  </aside>
+
+  <div class="main-content-container">
+
+    <nav class="navbar-container">
+      <ui-navbar class="ui-navbar" [collapsedSignal]="isSidebarCollapsed"/>
+    </nav>
+
+    <section class="content-container">
+      <router-outlet></router-outlet>
+    </section>
+
+    <footer class="footer-container">
+      <ui-footer style="width: 100%;"/>
+    </footer>
+
+  </div>
+
+</section>

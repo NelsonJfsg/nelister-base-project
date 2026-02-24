@@ -1,0 +1,13 @@
+<section (click)="onHandleNavigation()"
+  class="sidebar-item"
+  [class.sidebar-item--collapsed]="isCollapsed()"
+  [class.sidebar-item--expanded]="!isCollapsed()"
+>
+  <mat-icon class="sidebar-item__icon">
+    {{navItem.iconName}}
+  </mat-icon>
+
+  <p class="sidebar-item__title">
+    {{navItem.title}}
+  </p>
+</section>
