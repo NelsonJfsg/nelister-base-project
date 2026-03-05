@@ -24,6 +24,10 @@ jobs:
       - name: Build Angular
         run: npm run build
 
+      - name: List dist folder
+        run: |
+          ls -R dist
+
       - name: Deploy to VPS
         uses: appleboy/ssh-action@v0.1.8
         with:
