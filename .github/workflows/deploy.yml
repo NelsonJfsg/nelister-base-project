@@ -28,7 +28,16 @@ jobs:
         run: |
           ls -R dist
 
-      - name: Deploy to VPS
+      - name: Upload Angular build to VPS
+        uses: appleboy/scp-action@v0.1.1
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          password: ${{ secrets.PASSWORD_USER }}
+          port: ${{ secrets.VPS_PORT }}
+          source: "dist/NelisterBaseProject/browser/*"   # <-- build que está en GitHub Actions
+          target: "/var/www/NelisterBaseProject/"        # <-- destino en tu VPS
+      - name: Restart services
         uses: appleboy/ssh-action@v0.1.8
         with:
           host: ${{ secrets.VPS_HOST }}
@@ -36,5 +45,4 @@ jobs:
           password: ${{ secrets.PASSWORD_USER }}
           port: ${{ secrets.VPS_PORT }}
           script: |
-            rm -rf /var/www/NelisterBaseProject/* 
-            cp -r dist/NelisterBaseProject/browser/* /var/www/NelisterBaseProject/
+            sudo systemctl restart nginx
