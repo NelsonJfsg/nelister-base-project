@@ -37,4 +37,4 @@ jobs:
           port: ${{ secrets.VPS_PORT }}
           script: |
             rm -rf /var/www/NelisterBaseProject/* 
-            cp -r dist/NelisterBaseProject/* /var/www/NelisterBaseProject/
+            cp -r dist/NelisterBaseProject/browser/* /var/www/NelisterBaseProject/
